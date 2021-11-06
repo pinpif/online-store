@@ -19,7 +19,7 @@ parent_category_id bigint references category(id)
 CREATE TABLE product(
 id bigserial PRIMARY KEY,
 name text,
-price text,
+price money,
 expirationDate date,
 legal_age boolean,
 category_id bigint references category(id) not null
